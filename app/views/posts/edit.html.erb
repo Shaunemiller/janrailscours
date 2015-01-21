@@ -1,0 +1,13 @@
+<h1> Edit a post </h1>
+
+
+<!-- we need a gorm for updating a post -->
+
+<%= simple_form_for @post do |form| %>
+
+	<%= form.input :title %>
+	<%= form.input :body %>
+
+	<%= form.button :submit %>
+
+<%end%>

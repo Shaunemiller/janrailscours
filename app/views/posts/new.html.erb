@@ -1,0 +1,12 @@
+<h1> Submit a new post </h1>
+
+<!-- creating a new post -->
+
+<%= simple_form_for @post do |form| %>
+
+	<%= form.input :title %>
+	<%= form.input :body %>
+
+	<%= form.button :submit %>
+
+<% end %>
